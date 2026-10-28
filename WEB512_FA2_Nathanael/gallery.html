@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Explore SA Events</title>
+    <meta name="description" content="Photo gallery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-gallery">
+    <header id="site-header">
+        <div class="topbar">
+            <div><span>📍 Gqeberha, Eastern Cape</span><span id="datetime" aria-live="off"></span></div>
+        </div>
+        <nav aria-label="Main navigation"><a class="logo" href="index.html">Explore <span>SA Events</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button id="theme-toggle" type="button" aria-pressed="false">🌙 Dark mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-head">
+            <div class="wrap">
+                <h1>Gallery</h1>
+                <p>Elephants, penguins, forests and shorelines. Click a photo to enlarge it.</p>
+            </div>
+        </section>
+        <section class="wrap">
+            <div class="gallery" id="gallery">
+                <figure><img src="images/Addo elephants.jpg" alt="Elephant herd in Addo Elephant National Park" loading="lazy">
+                    <figcaption>Elephant herd in Addo Elephant National Park</figcaption>
+                </figure>
+                <figure><img src="images/penguins.jpg" alt="African penguins on Bird Island, Algoa Bay" loading="lazy">
+                    <figcaption>African penguins on Bird Island, Algoa Bay</figcaption>
+                </figure>
+                <figure><img src="images/Super-Tubes_1.webp" alt="Surfer at Supertubes, Jeffreys Bay" loading="lazy">
+                    <figcaption>Surfer at Supertubes, Jeffreys Bay</figcaption>
+                </figure>
+                <figure><img src="images/1-tsitsikamma-hike-ocean-trail-adobe-1-1024x581.jpg" alt="Afromontane forest in Tsitsikamma" loading="lazy">
+                    <figcaption>Afromontane forest in Tsitsikamma</figcaption>
+                </figure>
+                <figure><img src="images/Wild-coast-sunrise.jpg" alt="Sunrise over the Wild Coast" loading="lazy">
+                    <figcaption>Sunrise over the Wild Coast</figcaption>
+                </figure>
+                <figure><img src="images/sardinia-beach.jpg" alt="Sardinia Bay beach, Gqeberha" loading="lazy">
+                    <figcaption>Sardinia Bay beach, Gqeberha</figcaption>
+                </figure>
+                <figure><img src="images/Black-rhino.avif" alt="Black rhino in a private reserve" loading="lazy">
+                    <figcaption>Black rhino in a private reserve</figcaption>
+                </figure>
+                <figure><img src="images/white_whale.jpg" alt="Southern right whale in Algoa Bay" loading="lazy">
+                    <figcaption>Southern right whale in Algoa Bay</figcaption>
+                </figure>
+                <figure><img src="images/giraffe-sunset.jpg" alt="Giraffe at sunset in a game reserve" loading="lazy">
+                    <figcaption>Giraffe at sunset in a game reserve</figcaption>
+                </figure>
+                <figure><img src="images/storms-river-bridge.jpg" alt="Storms River suspension bridge" loading="lazy">
+                    <figcaption>Storms River suspension bridge</figcaption>
+                </figure>
+            </div>
+            <p class="note" style="margin-top:1.5rem">These images are illustrations. To use real photos, save them in
+                the <code>images/</code> folder and update the <code>src</code> and <code>alt</code> attributes.</p>
+        </section>
+        <dialog id="lightbox" aria-label="Enlarged photo"><img id="lightbox-img" src="" alt="">
+            <div><span id="lightbox-cap"></span><button type="button" class="btn small"
+                    id="lightbox-close">Close</button></div>
+        </dialog>
+    </main>
+    <footer>
+        <div class="wrap">
+            <section>
+                <h3>Explore SA Events</h3>
+                <p>Promoting activities, attractions and events across the coastal Eastern Cape since 2022.</p>
+            </section>
+            <section>
+                <h3>Visit us</h3>
+                <address style="font-style:normal">248 Laurence Erasmus Drive, Bethelsdorp, Gqeberha (Port Elizabeth),
+                    6059<br>+27 41 555 0123<br><a href="mailto:hello@exploresa.co.za">hello@exploresa.co.za</a>
+                </address>
+            </section>
+            <section>
+                <h3>Quick links</h3>
+                <p><a href="events.html">Upcoming events</a><br><a href="gallery.html">Photo gallery</a><br><a
+                        href="contact.html">Book or enquire</a></p>
+                <p class="note">© 2026 Explore SA Events</p>
+            </section>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events | Explore SA Events</title>
+<meta name="description" content="Upcoming Eastern Cape events and ticket prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-events">
+<header id="site-header">
+<div class="topbar"><div><span>📍 Gqeberha, Eastern Cape</span><span id="datetime" aria-live="off"></span></div></div>
+<nav aria-label="Main navigation"><a class="logo" href="index.html">Explore <span>SA Events</span></a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="events.html" class="active" aria-current="page">Events</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact Us</a></li><li><button id="theme-toggle" type="button" aria-pressed="false">🌙 Dark mode</button></li></ul></nav>
+</header>
+<main>
+<section class="page-head"><div class="wrap"><h1>Events</h1><p>Six coastal Eastern Cape events. Ticket prices are per person; local rates are in rand, international rates in US dollars.</p></div></section><section class="wrap"><h2>Events calendar</h2>
+<div class="filter"><label for="cat-filter">Filter by category:</label><select id="cat-filter" style="max-width:220px"><option value="all">All events</option><option>Conservation</option><option>Culture</option><option>Marine</option><option>Sport</option><option>Wildlife</option></select></div>
+<div class="scroll"><table id="events-table"><caption class="note" style="text-align:left;padding:.5rem 0">Sample event information: dates and prices are placeholders.</caption><thead><tr><th scope="col">Event</th><th scope="col">Date and time</th><th scope="col">Location</th><th scope="col">Category</th><th scope="col">Local price</th><th scope="col">International price</th></tr></thead><tbody><tr data-cat="Wildlife"><td><strong>Addo Elephant Dawn Safari Weekend</strong><br><span class="meta">Guided dawn game drives to see elephant herds, buffalo and black rhino.</span></td><td>Sat 14 Nov 2026<br>05:30</td><td>Addo Elephant National Park</td><td>Wildlife</td><td>R1,450</td><td>US$130</td></tr><tr data-cat="Marine"><td><strong>Algoa Bay Penguin & Whale Cruise</strong><br><span class="meta">Boat trip past Bird Island to see African penguins, dolphins and whales.</span></td><td>Sat 21 Nov 2026<br>09:00</td><td>Algoa Bay, Gqeberha</td><td>Marine</td><td>R650</td><td>US$60</td></tr><tr data-cat="Sport"><td><strong>Jeffreys Bay Surf Festival</strong><br><span class="meta">Surf competition, live music and food stalls on the beachfront.</span></td><td>Sat 5 Dec 2026<br>08:00</td><td>Supertubes, Jeffreys Bay</td><td>Sport</td><td>R250</td><td>US$25</td></tr><tr data-cat="Sport"><td><strong>Tsitsikamma Forest Trail Run</strong><br><span class="meta">10 km and 21 km trail runs through ancient Afromontane forest.</span></td><td>Sat 16 Jan 2027<br>06:30</td><td>Storms River Mouth</td><td>Sport</td><td>R400</td><td>US$40</td></tr><tr data-cat="Culture"><td><strong>Wild Coast Culture & Food Festival</strong><br><span class="meta">Xhosa music, beadwork, storytelling and traditional food.</span></td><td>Sat 6 Feb 2027<br>10:00</td><td>Coffee Bay, Wild Coast</td><td>Culture</td><td>R550</td><td>US$50</td></tr><tr data-cat="Conservation"><td><strong>Beach Clean-up & Conservation Day</strong><br><span class="meta">Volunteer clean-up and talks on protecting penguins and shorebirds.</span></td><td>Sat 20 Feb 2027<br>08:30</td><td>Sardinia Bay, Gqeberha</td><td>Conservation</td><td>R50</td><td>US$5</td></tr></tbody></table></div></section>
+<section class="band"><div class="wrap split"><article><h2>Event cost calculator</h2><p>Work out your total before you book. Children aged 3–12 pay half price.</p>
+<form id="calc-form" class="formbox" novalidate><div><label for="calc-event">Event</label><select id="calc-event"></select></div>
+<fieldset class="radio"><legend>I am a</legend><label><input type="radio" name="visitor" value="local" checked> Local resident (R)</label><label><input type="radio" name="visitor" value="intl"> International visitor (US$)</label></fieldset>
+<div><label for="calc-adults">Adults</label><input id="calc-adults" type="number" min="0" max="20" value="2"></div><div><label for="calc-kids">Children (3–12)</label><input id="calc-kids" type="number" min="0" max="20" value="0"></div>
+<p class="error" id="calc-error" role="alert"></p><button class="btn" type="submit">Calculate total</button></form><div id="calc-result" role="status"></div></article>
+<article><h2>Plan your visit</h2><ol class="steps"><li>Choose an event and calculate the cost</li><li>Send the booking form on the contact page</li><li>Pay a 30% deposit by EFT or card link</li><li>Receive tickets and venue directions</li></ol><p style="margin-top:1rem"><a class="btn alt" href="contact.html">Book an event</a></p>
+<h3 style="margin-top:1.5rem">Find us</h3><iframe class="map" title="Map showing Gqeberha, Eastern Cape" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=25.40%2C-34.05%2C25.75%2C-33.85&amp;layer=mapnik"></iframe></article></div></section>
+</main>
+<footer><div class="wrap">
+<section><h3>Explore SA Events</h3><p>Promoting activities, attractions and events across the coastal Eastern Cape since 2022.</p></section>
+<section><h3>Visit us</h3><address style="font-style:normal">248 Laurence Erasmus Drive, Bethelsdorp, Gqeberha (Port Elizabeth), 6059<br>+27 41 555 0123<br><a href="mailto:destination@exploresa.co.za">destination@exploresa.co.za</a></address></section>
+<section><h3>Quick links</h3><p><a href="events.html">Upcoming events</a><br><a href="gallery.html">Photo gallery</a><br><a href="contact.html">Book or enquire</a></p><p class="note">© 2026 Explore SA Events</p></section>
+</div></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

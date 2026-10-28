@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Explore SA Events</title>
+    <meta name="description" content="Events, parks and beaches of the coastal Eastern Cape.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-index">
+    <header id="site-header">
+        <div class="topbar">
+            <div><span>📍 Gqeberha, Eastern Cape</span><span id="datetime" aria-live="off"></span></div>
+        </div>
+        <nav aria-label="Main navigation"><a class="logo" href="index.html">Explore <span>SA Events</span></a>
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button id="theme-toggle" type="button" aria-pressed="false">🌙 Dark mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="welcome" role="status" hidden><span id="welcome-text"></span><button type="button"
+                id="welcome-close">Dismiss</button></div>
+        <section class="slideshow" id="slideshow" aria-label="Featured events slideshow">
+            <article class="slide active"><img src="images/Addo elephants.jpg" alt="Elephant herd in Addo Elephant National Park">
+                <div class="text">
+                    <h1>Elephants, ocean and wild coast</h1>
+                    <p>Discover the events, parks and beaches of the coastal Eastern Cape.</p><a class="btn"
+                        href="events.html">See upcoming events</a>
+                </div>
+            </article>
+            <article class="slide"><img src="images/penguins.jpg" alt="African penguins on Bird Island, Algoa Bay">
+                <div class="text">
+                    <h1>Protect the African penguin</h1>
+                    <p>Join cruises and clean-ups that support endangered coastal wildlife.</p><a class="btn"
+                        href="events.html">Join an event</a>
+                </div>
+            </article>
+            <article class="slide"><img src="images/1-tsitsikamma-hike-ocean-trail-adobe-1-1024x581.jpg" alt="Afromontane forest in Tsitsikamma">
+                <div class="text">
+                    <h1>Forests, surf and culture</h1>
+                    <p>From Tsitsikamma trails to Jeffreys Bay waves, there is an event for everyone.</p><a class="btn"
+                        href="gallery.html">Open the gallery</a>
+                </div>
+            </article><button class="sl-btn" id="prev" type="button" aria-label="Previous slide">‹</button><button
+                class="sl-btn" id="next" type="button" aria-label="Next slide">›</button>
+            <div class="dots" id="dots"></div>
+        </section>
+        <section class="wrap">
+            <h2>Upcoming events</h2>
+            <p>The next three events on our calendar.</p>
+            <div class="grid" id="upcoming"></div>
+            <p style="margin-top:1.5rem"><a class="btn alt" href="events.html">View all events</a></p>
+        </section>
+        <section class="band">
+            <div class="wrap split">
+                <article>
+                    <h2>Why join us</h2>
+                    <ul class="ticks">
+                        <li>Local guides who grew up in the Eastern Cape</li>
+                        <li>Separate fair pricing for residents and international visitors</li>
+                        <li>Part of each ticket supports wildlife conservation</li>
+                        <li>Small groups and safe, vetted venues</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>How it works</h2>
+                    <ol class="steps">
+                        <li>Browse the events calendar</li>
+                        <li>Use the cost calculator to plan your budget</li>
+                        <li>Send a booking enquiry on the contact page</li>
+                        <li>We confirm and send your tickets</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+        <section class="wrap">
+            <h2>What visitors say</h2>
+            <div class="grid">
+                <article class="review">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p>“Watching elephants drink from a waterhole just metres away was unforgettable.”</p>
+                    <p class="who">Sarah M.</p>
+                    <p class="meta">Johannesburg · Addo Dawn Safari</p>
+                </article>
+                <article class="review">
+                    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p>“Smooth planning from overseas and a beautiful forest route.”</p>
+                    <p class="who">Lars K.</p>
+                    <p class="meta">Hamburg, Germany · Tsitsikamma Run</p>
+                </article>
+                <article class="review">
+                    <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+                    <p>“Great resident pricing, and seeing the penguins made me proud of our bay.”</p>
+                    <p class="who">Thabo N.</p>
+                    <p class="meta">Gqeberha · Penguin Cruise</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap">
+            <section>
+                <h3>Explore SA Events</h3>
+                <p>Promoting activities, attractions and events across the coastal Eastern Cape since 2022.</p>
+            </section>
+            <section>
+                <h3>Visit us</h3>
+                <address style="font-style:normal">248 Laurence Erasmus Drive, Bethelsdorp, Gqeberha (Port Elizabeth),
+                    6059<br>+27 41 555 0123<br><a href="mailto:destination@exploresa.co.za">destination@exploresa.co.za</a>
+                </address>
+            </section>
+            <section>
+                <h3>Quick links</h3>
+                <p><a href="events.html">Upcoming events</a><br><a href="gallery.html">Photo gallery</a><br><a
+                        href="contact.html">Book or enquire</a></p>
+                <p class="note">© 2026 Explore SA Events</p>
+            </section>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
